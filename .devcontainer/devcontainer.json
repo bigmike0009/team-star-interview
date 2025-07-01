@@ -1,23 +1,14 @@
 {
   "name": "Fitness Tracker Interview",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter"
-      ]
-    }
-  },
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11"
     }
   },
-  "postCreateCommand": "pip install -r /workspaces/fitness-tracker-interview/requirements.txt",
-  "forwardPorts": [8888],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-toolsai.jupyter"]
+    }
   }
 } 
